@@ -1,5 +1,5 @@
 body{
-    background: url("/assets/img/comics.webp");
+    background: url("assets/img/comics.webp");
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -28,7 +28,7 @@ body *{
     text-align: center;
 }
 .con_fondo{
-    background-image: url("/assets/img/fondo_ficha.jpg");
+    background-image: url("assets/img/fondo_ficha.jpg");
 }
 .sin_fondo *{
     background: transparent;
@@ -38,7 +38,7 @@ body *{
 
 @media (max-width: 500px) {
     .con_fondo{
-        background-image: url("/assets/img/fondo_ficha-vertical.jpg");
+        background-image: url("assets/img/fondo_ficha-vertical.jpg");
     }
     .hero{
         width: 100%;
