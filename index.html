@@ -7,10 +7,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,800&display=swap" rel="stylesheet">
 
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="bg-dark">
@@ -22,26 +23,31 @@
           </nav>
     </header>
     <main>
-        <section class="container text-center">
-            <div class="contenido">
-                <img src="assets/img/sh1.jpg" alt="">
+        <section class="text-center m-3">
+            <div class="contenido sin_fondo">
+                <img src="assets/img/sh2.png" alt="">
+            </div>
+            <form action="#" class="formulario ">
                 <h1>Encuentra tu Superhero</h1>
                 <p>Ingresa el numero del Superhero a buscar <strong>(entre 1 y 732)</strong></p>
-            </div>
-            <div class="grafico"></div>
-            <form action="#" class="formulario">
-                <ul class="list-unstyled">
-                    <li>
+                <ul class="list-unstyled ">
+                    <li class="py-1">
                         <input class="numero" type="text">
                     </li>
-                    <li>
+                    <li class="py-1">
                         <input name="buscar" type="submit" class="btn btn-primary button" value="buscar">
                         <p id="respuesta"></p>
                     </li>
                 </ul>
             </form>
         </section>
+        <section class="text-center">
+            <div></div>
+        </section>
     </main>
-
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

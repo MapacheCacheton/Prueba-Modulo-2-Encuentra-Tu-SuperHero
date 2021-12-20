@@ -1,3 +1,33 @@
+body{
+    background: url("/assets/img/comics.webp");
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+body *{
+    font-weight: 900;
+}
 .formulario ul li{
     text-align: center;
 }
+.altura{
+    height: 30em;
+}
+.bordes{
+    border-style: none none solid none;
+}
+.all_bordes{
+    border-style: solid;
+}
+.sin_datos{
+    text-align: center;
+}
+.con_fondo{
+    background-image: url("/assets/img/fondo_ficha.jpg");
+}
+.sin_fondo *{
+    background: transparent;
+    
+}
+
