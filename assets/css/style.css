@@ -1,5 +1,5 @@
 body{
-    background: url("assets/img/comics.webp");
+    background: url("https://lh3.googleusercontent.com/xfYHegKYjZ_eBv3BjWptGsi78lQS6cu6WVlVkF30zdldMwg2_Rw6BhEEDF2agOMN15BOiX--Ei-kRqATeH4OOZlFbsF5ZwuJSL-UbuDaDNkvf6hDVSPJdj7qwzGO-rsBBLFEEH8oJA=w600-h315-p-k");
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -28,7 +28,7 @@ body *{
     text-align: center;
 }
 .con_fondo{
-    background-image: url("assets/img/fondo_ficha.jpg");
+    background-image: url("https://lh3.googleusercontent.com/lbndsR1reBipSrnAUVCbcfVT-IPliYs1KarYdb9knOvrUqEwyt9pNFUv3lP-FV4nzNVaGdW0FZDVIi1ClFtcfOFRT_FwZDeB3mZh1FFGsV8Uk636Zr6PA7u4Xi4Ep4M1CI7lv6ppcQ=w2400");
 }
 .sin_fondo *{
     background: transparent;
@@ -38,7 +38,7 @@ body *{
 
 @media (max-width: 500px) {
     .con_fondo{
-        background-image: url("assets/img/fondo_ficha-vertical.jpg");
+        background-image: url("https://lh3.googleusercontent.com/b-ZOCPocOIt0oKVDfNOT40BApJsXgF8ahx64jqy6e1CEEDBjln2-2BUblT8wqlpwNC9l2aAmm3xfxxojffz9svhDw498MeLMhn6rgA452O4hHtIefU0sjo8GKQAZh-UuwDMQ2aJvnw=w2400");
     }
     .hero{
         width: 100%;
