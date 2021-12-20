@@ -31,16 +31,16 @@ $(document).ready(function(){
                 const html = `
                 
                 <div class="card-group row con_fondo">
-                    <div class="card mb-4 col-6 ">
+                    <div class="card col-sm-12 col-md-6 mb-4 ">
                         <h2 class="text-center bordes">Superhero encontrado</h2>
                         <div class="row no-gutters all_bordes">
                             <div class="col-sm-4 col-md-6 border-1">
-                                <img class="altura" src="${img}" alt="...">
+                                <img class="tam_img" src="${img}" alt="...">
                             </div>
                             <div class="col-md-6">
-                                <div class="card-body">
+                                <div class="card-body p-0">
                                     <div class="card bg-transparent">
-                                        <ul class="list-group list-group-flush ">
+                                        <ul id="lista" class="list-group list-group-flush ">
                                             <li class="list-group-item"> <h5 class="card-title">Nombre: ${data.name}</h5></li>
                                             <li class="list-group-item">Publicado por: ${data.biography.publisher}</li>
                                             <li class="list-group-item">Ocupación: ${data.work.occupation}</li>
@@ -54,7 +54,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                     </div>
-                    <div id="grafico" class="card col-6 "></div>
+                    <div id="grafico" class="card col-sm-12 col-md-6 "></div>
                 </div>`
                 contenido.innerHTML = html
                 $(contenido).css({
@@ -62,12 +62,8 @@ $(document).ready(function(){
                     'background-size': 'cover'
                 })
                 let estadisticas = []
-                console.log(data.powerstats);
-                // data.powerstats.forEach(element => {
-                //     estadisticas.push({y: Object.values(element), label: Object.keys(element)})
-                // });
 
-                Object.entries(data.powerstats).forEach((key, value)=>{
+                Object.entries(data.powerstats).forEach((key)=>{
                     if(key[0]!=='null' && key[1]!=='null')
                     estadisticas.push({y: key[1], label: key[0]})
                     else{
@@ -98,12 +94,12 @@ $(document).ready(function(){
                         data: [{
                             type: "pie",
                             startAngle: 40,
-                            toolTipContent: "<b>{label}</b>: {y}%",
+                            toolTipContent: "<b>{label}</b>: {y}",
                             showInLegend: "true",
                             legendText: "{label}",
                             indexLabelBackgroundColor: "#ffffffCC",
                             indexLabelFontSize: 16,
-                            indexLabel: "{label} - {y}%",
+                            indexLabel: "{label} - {y}",
                             dataPoints: estadisticas
                         }]
                 };

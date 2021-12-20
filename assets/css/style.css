@@ -3,15 +3,19 @@ body{
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
     color: white;
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 5px 5px 5px black;
+    margin: 0;
 }
 body *{
     font-weight: 900;
 }
-.formulario ul li{
-    text-align: center;
+.hero{
+    width: 30%;
 }
-.altura{
+.formulario h1{
+    font-size: 3em;
+}
+.tam_img{
     height: 30em;
 }
 .bordes{
@@ -31,3 +35,31 @@ body *{
     
 }
 
+
+@media (max-width: 500px) {
+    .con_fondo{
+        background-image: url("/assets/img/fondo_ficha-vertical.jpg");
+    }
+    .hero{
+        width: 100%;
+    }
+    .formulario h1{
+        font-size: 1em;
+    }
+    .tam_img{
+        height: 15em;
+    }
+    .contenido{
+        height: fit-content;
+    }
+    #lista *{
+        padding: 0;
+        border: 1px solid
+    }
+    .con_fondo h2{
+        font-size: 1.5em;
+    }
+    canvas{
+        display: none
+    }
+}
